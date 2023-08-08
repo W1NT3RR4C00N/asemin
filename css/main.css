@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Montserrat-regular";
+    src: url("../css/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-bold";
+    src: url("../css/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-light";
+    src: url("../css/Montserrat/Montserrat-Light.ttf");
+}
+
+body{
+    background-image: url("../img/fondo-02.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, cover;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    text-decoration: none;
+}    
+
+@media (max-width: 1600px){
+    body{
+        background-image: url("../img/fondo-tablet-03.jpg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100%, cover;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        text-decoration: none;
+    }    
+}
+
+@media (max-width: 1400px){
+    body{
+        background-image: url("../img/fondo-tablet-03.jpg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100%, cover;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        text-decoration: none;
+    }    
+}
+
+@media (max-width: 1200px){
+    body{
+        background-image: url("../img/fondo-tablet-03.jpg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100%, cover;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        text-decoration: none;
+    }    
+}
+
+@media (max-width: 900px){
+    body{
+        background-image: url("../img/fondo-mobile-03.jpg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100%, cover;
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        text-decoration: none;
+    }    
+}
+
+@media (max-width: 568px){
+    body{
+        background-image: url("../img/fondo-mobile-03.jpg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 100%, cover;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+        height: auto;
+        text-decoration: none;
+    }
+}
+
+p{
+    font-family: "Montserrat-regular";
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 110%;
+}
+
+.espacio-blanco{
+    background-color: transparent;
+    justify-self: center;
+    align-self: center;
+}
+
+.medio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.asemin{
+    font-weight: bold;
+}
+
+.titulo{
+    margin-top: 2rem;
+}  
+
+@media (max-width: 900px){
+    .titulo{
+        margin-top: 2rem;
+    } 
+}
+
+@media (max-width: 768px){
+    .titulo{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.bold-h1{
+    font-size: 30px;
+    font-family: "Montserrat-light";
+    color: white;
+    text-align: center;
+    line-height: 130%;
+}
+
+.bold-h2{
+    font-family: "montserrat-bold";
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    line-height: 130%;
+}
+
+@media (max-width: 900px){
+    .bold-h1{
+        font-size: 25px;
+        font-family: "Montserrat-light";
+        color: white;
+        text-align: center;
+        line-height: 130%;
+    }
+
+    .bold-h2{
+        font-family: "montserrat-bold";
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        line-height: 130%;
+    }
+}
+
+@media (max-width: 578px){
+    .bold-h1{
+        font-size: 17px;
+        font-family: "Montserrat-light";
+        color: white;
+        text-align: center;
+        line-height: 130%;
+    }
+
+    .bold-h2{
+        font-family: "montserrat-bold";
+        font-size: 32px;
+        color: white;
+        text-align: center;
+        line-height: 130%;
+    }
+}
+
+
+.logo img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    gap: 1rem;
+}
+
+
+@media (max-width: 900px){
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 200px;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 150px;
+        gap: 1rem;
+    }
+}
+
+.separador{
+    background-color: white;
+    height: 5px;
+    border: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:center
+}
+
+.globos{
+    width: 100px;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 900px){
+    .globos{
+        width: 100px;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    .globos{
+        width: 100px;
+        padding-bottom: 1rem;
+    }
+}
+
+.fila-globos{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px){
+    .fila-globos{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px){
+    .fila-globos{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+}
+
+.fila-globos div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 900px){
+    .info{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px){
+    .info{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+}
+
+.info div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
